@@ -1,0 +1,87 @@
+:root {
+  --primary-cyan: hsl(179, 62%, 43%);
+  --primary-bright-yellow: hsl(71, 73%, 54%);
+  --neutral-light-gray: hsl(204, 43%, 93%);
+  --neutral-grayish-blue: hsl(218, 22%, 67%);
+  --neutral-dull-cyan: hsl(180, 47%, 52%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  /* - Font size: 16px */
+  font-size: 62.5%;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(106, 0%, 94%);
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight {
+  color: var(--primary-bright-yellow);
+}
+
+.stack {
+  --space: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
+.imposter {
+  font-size: 1.6rem;
+  border-radius: 10px;
+  /* border: 1px solid var(--neutral-grayish-blue); */
+  box-shadow: 1px 1px 10px var(--primary-cyan);
+  max-width: 630px;
+  background-color: var(--white);
+}
+
+.imposter-header {
+}
+
+.imposter-price {
+  flex-grow: 1;
+  color: var(--white);
+  background-color: var(--primary-cyan);
+  border-radius: 0 0 0 10px;
+}
+
+.imposter-price-faded {
+}
+
+.imposter-price-button {
+  padding: 0.5em 5em;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--primary-bright-yellow);
+}
+
+.imposter-info {
+  flex-grow: 1;
+  background-color: var(--neutral-dull-cyan);
+  border-radius: 0 0 10px 0;
+}
+
+.imposter-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.imposter-bottom-half {
+  display: flex;
+}
